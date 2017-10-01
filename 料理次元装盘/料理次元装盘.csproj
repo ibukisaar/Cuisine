@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04EFB7A9-664B-4257-B843-D567E419B5C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>料理次元装盘</RootNamespace>
+    <AssemblyName>料理次元装盘</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ComboEffectType.cs" />
+    <Compile Include="Ex.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="FoodProgram.cs" />
+    <Compile Include="FoodStatus.cs" />
+    <Compile Include="Foods\东坡肉.cs" />
+    <Compile Include="Foods\佛跳墙.cs" />
+    <Compile Include="Foods\冰糖葫芦.cs" />
+    <Compile Include="Foods\千层面.cs" />
+    <Compile Include="Foods\叫花鸡.cs" />
+    <Compile Include="Foods\可丽饼.cs" />
+    <Compile Include="Foods\墨西哥卷饼.cs" />
+    <Compile Include="Foods\天妇罗.cs" />
+    <Compile Include="Foods\提拉米苏.cs" />
+    <Compile Include="Foods\摩卡咖啡.cs" />
+    <Compile Include="Foods\春卷.cs" />
+    <Compile Include="Foods\海洋之星酒冻.cs" />
+    <Compile Include="Foods\烧麦.cs" />
+    <Compile Include="Foods\焦糖布丁.cs" />
+    <Compile Include="Foods\爆米花.cs" />
+    <Compile Include="Foods\玉子烧.cs" />
+    <Compile Include="Foods\瑞典鲱鱼罐头.cs" />
+    <Compile Include="Foods\瑞士鸡翅.cs" />
+    <Compile Include="Foods\白米饭.cs" />
+    <Compile Include="Foods\紫菜蛋花汤.cs" />
+    <Compile Include="Foods\罗宋汤.cs" />
+    <Compile Include="Foods\腌黄瓜.cs" />
+    <Compile Include="Foods\莎朗牛排.cs" />
+    <Compile Include="Foods\蓝色玛格丽特.cs" />
+    <Compile Include="Foods\薯条.cs" />
+    <Compile Include="Foods\蛋包饭.cs" />
+    <Compile Include="Foods\西芹百合.cs" />
+    <Compile Include="Foods\馄饨.cs" />
+    <Compile Include="Foods\香槟.cs" />
+    <Compile Include="Foods\香菜戚风蛋糕.cs" />
+    <Compile Include="Foods\龙虾意面.cs" />
+    <Compile Include="FoodType.cs" />
+    <Compile Include="LabelBorder.cs" />
+    <Compile Include="IndexConverter.cs" />
+    <Compile Include="IndexFood.cs" />
+    <Compile Include="ComboEffect.cs" />
+    <Compile Include="ProgramKey.cs" />
+    <Compile Include="单元.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
